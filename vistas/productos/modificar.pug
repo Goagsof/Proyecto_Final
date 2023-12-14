@@ -19,28 +19,17 @@ html
 form(action="/modificar_producto" method="post")
   #Panel1(style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 499px; width: 50%; max-width: 355px")
     label#Label1(style="font-size: xx-large; text-align: center; margin-top: 15px") Modificar producto
+    br
     label#Label2(style="font-size: large; text-align: center; margin-top: 10px") Nombre del producto a modificar
     input#txtID(name="nombreProductoActual" type="text" style="width: 100%; margin-top: 10px;")
-
     label#Label6(style="font-size: x-large") Nuevo nombre
     input#txtNombre(name="nuevoNombre" type="text" style="width: 100%; margin-top: 10px")
-
-    label#Label2(style="font-size: x-large") Nombre del producto a modificar
-    input#txtID(name="nombreProductoActual" type="text" style="width: 100%; margin-top: 10px")
-
-    label#Label6(style="font-size: x-large") Nuevo nombre
-    input#txtNombre(name="nuevoNombre" type="text" style="width: 100%; margin-top: 10px")
-
     label#Label3(style="font-size: x-large") Nueva descripción
     input#txtDescripcion(name="nuevaDescripcion" type="text" style="width: 100%; margin-top: 10px")
-
     label#Label4(style="font-size: x-large") Nueva cantidad
     input#txtCantidad(name="nuevaCantidad" type="text" style="width: 100%; margin-top: 10px")
-
     label#Label5(style="font-size: x-large") Nuevo precio
     input#txtPrecio(name="nuevoPrecio" type="text" style="width: 100%; margin-top: 10px")
-
     button#btmModificar(style="width: 100%; margin-top: 10px; background-color: #0089fa; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; height: 30px") Modificar
-
     label#lblEstado(style="text-align: center; margin-top: 10px")
 a(href="/tabla_productos",style="font-size: X-Large; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);") Ver productos
