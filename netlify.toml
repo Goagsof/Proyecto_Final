@@ -1,7 +1,6 @@
 [build]
-    command = "npm run build"
-    publish="/build"
-    base = "/"
+  command = "npm start"
+  publish = "D:/CUC/Cuatri 3 2023/Progra 4/Proyectos/Proyecto_Final"
 
 [[redirects]]
 from = "/*"
