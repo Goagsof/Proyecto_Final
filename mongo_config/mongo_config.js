@@ -2,9 +2,11 @@ const mongoose = require('mongoose');
 
 const {Schema} = mongoose;
 
-const connect = 'mongodb://localhost/ProyectoF';
+// Utiliza process.env.MONGODB_URI para acceder a la variable de entorno
+const connect = process.env.MONGODB_URI || 'mongodb://localhost/ProyectoF';
 
-mongoose.connect(connect, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(connect, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 const usuarioSchema = new Schema ({
     nombre: String,
