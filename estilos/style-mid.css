@@ -1,0 +1,17 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('https://images.alphacoders.com/123/1239346.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.centrar {
+  display: block;
+  text-align: center;
+  font-size: 23px;
+  color: #fff;
+  padding: 20px;
+}

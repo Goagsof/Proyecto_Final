@@ -1,0 +1,9 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/08/fondos-pantalla-ios-17-ipados-17-3104948.jpg?tf=3840x');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  }

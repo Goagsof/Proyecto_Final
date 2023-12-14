@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/menu-navegacion.css')
+    link(rel='stylesheet', href='/Style.css')
+
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li: a(href="/ingresar") Ingresar producto
+          li: a(href="/modificar") Modificar producto
+          li: a(href="/buscar") Buscar producto
+          li: a(href="/eliminar") Eliminar producto
+
+form(action="/comprar_producto" method="post")
+
+
+  div#panelInfo(style="position: relative; margin: 20px auto; width: 60%; max-width: 407px")
+    label#Label2(style="font-size: XX-Large; text-align: center; margin-bottom: 10px") Comprar producto
+    br
+    label#Label3(style="font-size: Large") Nombre producto
+    input#txtComprar(type="text" name="nombreProducto" style="width: 100%; margin-bottom: 10px")
+    label#Label4(style="font-size: Large") Cantidad
+    input#txtCantidad(type="text" name="cantidadComprada" style="width: 100%; margin-bottom: 10px")
+    input(type="submit" style="width: 100%; background-color: #0089fa; color: white; padding: 8px; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 10px;" value="Comprar")
+    div#estadoCompra(style="text-align: center; color: #333")
+
+        
+  div#panelTabla(style="position: relative; margin: 20px auto; width: 80%; max-width: 1148px")
+    a(href="/tabla_productos",style="font-size: X-Large; display: block; text-align: center; margin-top: 20px") Ver productos

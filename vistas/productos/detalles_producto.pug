@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Detalles del Producto
+  body
+    center 
+      h2 Detalles del Producto
+      table
+        tr
+          th Nombre
+          td= producto.nombre
+        tr
+          th Descripción
+          td= producto.descripcion
+        tr
+          th Cantidad
+          td= producto.cantidad
+        tr
+          th Precio
+          td= producto.precio
+      a(href="/buscar") Volver a la búsqueda

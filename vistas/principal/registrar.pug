@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Registro de usuario
+    link(rel='stylesheet', href='/login.css')
+  body
+    h1(style="text-align: center;") Registro de usuario
+
+    form(action="/agregar" method="post")
+      div
+        label(for="nombre") Usuario
+        input(type="text" name="nombre" required)
+      div
+        label(for="contraseña") Contraseña
+        input(type="password" name="contraseña" required)
+      div
+        label(for="correo") Correo
+        input(type="email" name="correo" required)
+      div
+        <input type="submit" value="Registrar">
+      div(style="text-align: center;")
+
+      label
+        a(href="/login") Volver al inicio de sesión

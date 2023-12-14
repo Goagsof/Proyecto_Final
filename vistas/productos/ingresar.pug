@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/Style.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li: a(href="/ingresar") Ingresar producto
+          li: a(href="/modificar") Modificar producto
+          li: a(href="/buscar") Buscar producto
+          li: a(href="/eliminar") Eliminar producto
+
+form(action="/agregar_producto" method="post")
+  #PanelIngresar(style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 469px; width: 50%; max-width: 691px")
+    label#Label1(style="font-size: xx-large; text-align: center; margin-top: 15px") Ingresar producto
+    label#Label2(style="font-size: X-Large") Nombre del producto
+    input(name="descripcion" type="text" style="width: 100%; margin-top: 10px;")
+    label#Label3(style="font-size: X-Large") Descripción
+    input(name="nombre" type="text" style="width: 100%; margin-top: 10px;")
+    label#Label4(style="font-size: X-Large") Cantidad
+    input(name="precio" type="text" style="width: 100%; margin-top: 10px;")
+    label#Label5(style="font-size: X-Large") Precio
+    input(name="cantidad" type="text" style="width: 100%; margin-top: 10px;")
+    input(type="submit" value="Vender" style="width: 100%; margin-top: 10px; background-color: #0089fa; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;")
+    label#lblEstado(style="text-align: center; margin-top: 10px;")
+

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/tabla.css')
+    title Lista de Productos
+  body
+    h1 Lista de Productos
+    center
+        a(href="/principal", style="z-index: 1; left: 74px;") Volver a Principal
+    table
+      thead
+        tr
+          th Nombre
+          th Descripción
+          th Cantidad
+          th Precio
+      tbody
+        each producto in productos
+          tr
+            td= producto.nombre
+            td= producto.descripcion
+            td= producto.cantidad
+            td= producto.precio
+            td 
+              img(src=producto.imagenUrl, alt=producto.nombre, style="width: 100px; height: 100px;", onerror="this.src='/ruta/imagen/alternativa.png'")

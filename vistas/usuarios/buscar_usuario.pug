@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/stylesheets/style-mid.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li.dropdown
+            a(href="#") Administrar
+            ul.dropdown-menu
+              li.desplegable: a(href="/ingresar") Ingresar producto
+              li.desplegable: a(href="/modificar") Modificar producto
+              li.desplegable: a(href="/buscar") Buscar producto
+              li.desplegable: a(href="/eliminar") Eliminar producto
+
+    #Panel1(style="z-index: 1; left: 800px; top: 144px; position: absolute; height: 513px; width: 440px")
+      label#Label1(style="z-index: 1; left: 128px; top: 10px; position: absolute; font-size: xx-large") Buscar usuario
+      label#Label2(style="z-index: 1; left: 106px; top: 69px; position: absolute; font-size: x-large") ID del usuario a buscar
+      input#txtID(type="text" style="z-index: 1; left: 111px; top: 101px; position: absolute; width: 228px")
+      button#btmBuscar(type="button" style="z-index: 1; left: 112px; top: 129px; position: absolute; width: 235px") Buscar
+      select#lstBusqueda(style="z-index: 1; left: 115px; top: 173px; position: absolute; height: 278px; width: 228px")
+      label#lblEstado(style="z-index: 1; left: 116px; top: 468px; position: absolute")

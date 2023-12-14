@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Iniciar sesión
+    link(rel='stylesheet', href='/login.css')
+  body
+    h1(style="text-align: center;") Inventario de productos
+    form(action="/validar_login" method="post")
+      div
+        label(for="username") Usuario
+        input#username(type="text" name="username" required)    
+
+      div 
+        label(for="password") Contraseña
+        input#password(type="password" name="password" required)
+
+      div
+          input(type="submit", value="Iniciar sesión")     
+      div
+        a(href="/registrar") ¿No tienes una cuenta? Registrate 

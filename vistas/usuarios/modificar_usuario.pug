@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/stylesheets/style-mid.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li.dropdown
+            a(href="#") Administrar
+            ul.dropdown-menu
+              li.desplegable: a(href="/ingresar") Ingresar producto
+              li.desplegable: a(href="/modificar") Modificar producto
+              li.desplegable: a(href="/buscar") Buscar producto
+              li.desplegable: a(href="/eliminar") Eliminar producto
+ 
+    #Panel1(style="z-index: 1; left: 86px; top: 137px; position: absolute; height: 499px; width: 355px")
+      label#Label1(style="z-index: 1; left: 68px; top: 49px; position: absolute; font-size: xx-large") Modificar usuario
+      label#Label2(style="z-index: 1; left: 68px; top: 112px; position: absolute; font-size: x-large") ID del usuario
+      input#txtID(type="text" style="z-index: 1; left: 65px; top: 149px; position: absolute; width: 200px")
+      label#Label6(style="z-index: 1; left: 68px; top: 174px; position: absolute; font-size: x-large") Nuevo nombre
+      input#txtNombre(type="text" style="z-index: 1; left: 65px; top: 205px; position: absolute; width: 200px")
+      label#Label3(style="z-index: 1; left: 68px; top: 236px; position: absolute; font-size: x-large") Nueva contraseña
+      input#txtContrasena(type="text" style="z-index: 1; left: 66px; top: 271px; position: absolute; width: 200px")
+      label#Label4(style="z-index: 1; left: 68px; top: 298px; position: absolute; font-size: x-large") Nuevo correo
+      input#txtCorreo(type="text" style="z-index: 1; left: 68px; top: 333px; position: absolute; width: 200px")
+      label#Label5(style="z-index: 1; left: 68px; top: 362px; position: absolute; font-size: x-large") Nuevo telefono
+      input#txtTelefono(type="text" style="z-index: 1; left: 68px; top: 393px; position: absolute; width: 200px; margin-bottom: 0px;")
+      button#btmModificar(style="z-index: 1; left: 68px; top: 423px; position: absolute; width: 210px; height: 30px;") Modificar
+      label#lblEstado(style="z-index: 1; left: 60px; top: 467px; position: absolute")
+      
+    #panelTabla(style="z-index: 1; left: 408px; top: 227px; position: absolute; height: 376px; width: 995px")
+      label#Label7(style="z-index: 1; left: 481px; top: 0px; position: absolute; font-size: xx-large") Usuarios

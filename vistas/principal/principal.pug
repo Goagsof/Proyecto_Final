@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/style-mid.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li: a(href="/ingresar") Ingresar producto
+          li: a(href="/modificar") Modificar producto
+          li: a(href="/buscar") Buscar producto
+          li: a(href="/eliminar") Eliminar producto
+    div.centrar 
+      h1 Inventario de productos 
+      p
+        | Proyecto final del programacion lV
+        br
+        | Elementos utilizados en el proyecto:
+        br
+        br
+        | 1-Node.js
+        br
+        br
+        | 2-Bases de datos MongoDB
+        br
+        br
+        | 3-Express
+        br
+        br
+        | 4-.pug
+        br
+        br
+        | 5-Git
+        br
+        br
+        
+      a(href="/abastecer")  
+        button(type='button') Abastecer
+        

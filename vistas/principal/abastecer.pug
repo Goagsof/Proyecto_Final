@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/Style.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li: a(href="/ingresar") Ingresar producto
+          li: a(href="/modificar") Modificar producto
+          li: a(href="/buscar") Buscar producto
+          li: a(href="/eliminar") Eliminar producto
+
+#panelInfo(style="z-index: 1; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 183px; width: 407px")
+  label#Label2(style="font-size: XX-Large; color: black; text-align: center;") Abastecer producto
+  br
+  label#Label3(style="font-size: Large; color: black;") Nombre producto
+  br
+  input(Name="nombreProducto" type="text" style="width: 100%; margin-bottom: 10px;")
+  label#Label4(style="font-size: Large; color: black;") Cantidad a abastecer
+  br
+  input(Name="cantidadAbastecida" type="text" style="width: 100%; margin-bottom: 10px;")
+  input(type="submit" style="width: 100%;" value="Abastecer")
+  label#lblEstado(style="color: black; text-align: center; margin-top: 10px;") Estado

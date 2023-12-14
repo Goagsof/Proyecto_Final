@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/stylesheets/style-mid.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li.dropdown
+            a(href="#") Administrar
+            ul.dropdown-menu
+              li.desplegable: a(href="/ingresar") Ingresar producto
+              li.desplegable: a(href="/modificar") Modificar producto
+              li.desplegable: a(href="/buscar") Buscar producto
+              li.desplegable: a(href="/eliminar") Eliminar producto
+
+    #PanelIngresar(style="z-index: 1; left: 695px; top: 94px; position: absolute; height: 469px; width: 691px")
+      label#Label1(style="z-index: 1; left: 246px; top: 17px; position: absolute; font-size: xx-large; margin-bottom: 1px") Ingresar usuario
+      label#Label2(style="z-index: 1; left: 242px; top: 85px; position: absolute; font-size: x-large") Nombre del usuario
+      input#txtContrasena(type="text" style="z-index: 1; left: 242px; top: 201px; position: absolute; width: 200px")
+      label#Label3(style="z-index: 1; left: 245px; top: 162px; position: absolute; font-size: x-large") Contraseña
+      input#txtNombre(type="text" style="z-index: 1; left: 244px; top: 122px; position: absolute; width: 200px")
+      label#Label4(style="z-index: 1; left: 242px; top: 239px; position: absolute; font-size: x-large") Correo
+      input#txtTelefono(type="text" style="z-index: 1; left: 242px; top: 344px; position: absolute; width: 200px")
+      label#Label5(style="z-index: 1; left: 241px; top: 311px; position: absolute; font-size: x-large") Telefono
+      input#txtCorreo(type="text" style="z-index: 1; left: 243px; top: 275px; position: absolute; width: 200px; bottom: 172px")
+      button#btmIngresar(style="z-index: 1; left: 241px; top: 387px; position: absolute; width: 212px") Ingresar
+      label#lblEstado(style="z-index: 1; left: 239px; top: 425px; position: absolute")

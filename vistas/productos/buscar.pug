@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/Style.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li: a(href="/ingresar") Ingresar producto
+          li: a(href="/modificar") Modificar producto
+          li: a(href="/buscar") Buscar producto
+          li: a(href="/eliminar") Eliminar producto
+
+form(action="/buscar_producto" method="post")
+  #Panel1(style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 513px; width: 440px; max-width: 80vw")
+    label#Label1(style="font-size: xx-large; text-align: center; margin-top: 10px") Buscar producto
+    br
+    label#Label2(style="font-size: x-large; text-align: center; margin-top: 20px") ID del producto a buscar
+    input#txtID(name="nombreProducto" type="text" style="width: 80%; margin: 10px auto; display: block;")
+    input(type="submit", value="Buscar" style="width: 80%; margin: 10px auto; display: block; background-color: #0089fa; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; height: 40px;")
+    label#lblEstado(style="text-align: center; margin-top: 20px")
+

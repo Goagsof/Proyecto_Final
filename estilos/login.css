@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('https://wallpapers.com/images/hd/landscape-white-minimalist-d0h9lllw9ds8g39m.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+  
+  form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    color: #0645AD;
+    text-decoration: none;
+    margin-top: 10px;
+  }

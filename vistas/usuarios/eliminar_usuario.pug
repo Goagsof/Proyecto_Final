@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Inventario de productos
+    link(rel='stylesheet', href='/stylesheets/style-mid.css')
+    link(rel='stylesheet', href='/menu-navegacion.css')
+  body
+    header
+      nav.stylenav
+        ul
+          li: a(href="/principal") Inicio
+          li: a(href="/comprar") Comprar
+          li: a(href="/vender") Vender
+          li.dropdown
+            a(href="#") Administrar
+            ul.dropdown-menu
+              li.desplegable: a(href="/ingresar") Ingresar producto
+              li.desplegable: a(href="/modificar") Modificar producto
+              li.desplegable: a(href="/buscar") Buscar producto
+              li.desplegable: a(href="/eliminar") Eliminar producto
+
+
+    #Panel1(style="z-index: 1; left: 776px; top: 93px; position: absolute; height: 173px; width: 440px")
+      label#Label1(style="z-index: 1; left: 108px; top: 12px; position: absolute; font-size: xx-large") Eliminar usuario
+      label#Label2(style="z-index: 1; left: 106px; top: 69px; position: absolute; font-size: x-large") ID del usuario a eliminar
+      input#txtID(type="text" style="z-index: 1; left: 111px; top: 101px; position: absolute; width: 228px")
+      button#btmEliminar(type="button" style="z-index: 1; left: 112px; top: 129px; position: absolute; width: 235px") Eliminar
+      label#lblEstado(style="z-index: 1; left: 118px; top: 164px; position: absolute")
+
+    #panelTabla(style="z-index: 1; left: 282px; top: 289px; position: absolute; height: 434px; width: 808px")
+      table#GVUsuarios(style="z-index: 1; left: 141px; top: 69px; position: absolute; height: 356px; width: 1148px")
+      label#Label3(style="z-index: 1; left: 657px; top: 4px; position: absolute; font-size: xx-large") Usuarios
